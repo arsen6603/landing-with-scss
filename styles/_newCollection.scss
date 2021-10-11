@@ -1,0 +1,31 @@
+.new__collection {
+    @include flexcenter();
+    flex-direction: column;
+    margin-top: 50px;
+    h2 {
+        font-family: $playfair_font;
+    }
+    hr {
+        width: 100px;
+        margin: 20px;
+    }
+}
+.new__collection_boxs {
+    display: flex;
+
+    max-width: 890px;
+    flex-wrap: wrap;
+}
+.collection__box {
+    width: 180px;
+    height: 270px;
+    margin: 20px;
+    &_img {
+      height: 200px;
+      background-color: #D0D0D0; 
+      @include flexcenter();            
+    } 
+    p {
+        margin-top: 10px;
+    }
+}

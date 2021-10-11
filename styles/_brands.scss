@@ -1,0 +1,17 @@
+.brands {
+   @include flexcenter();
+   flex-direction: column;
+   height: 300px;
+   margin-top: 70px;
+   h2 {
+       font-family: $playfair_font;
+   } 
+   hr {
+       width: 100px;
+       margin: 20px;
+   }
+
+   .brands__container {
+    display: flex;
+   }
+}

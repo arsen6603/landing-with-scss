@@ -1,0 +1,57 @@
+.footer {
+    height: 350px;
+    background: url(./images/footer_backgriund.png), no-repeat;
+    background-size: cover;
+    @include flexcenter();
+    h2 {
+        font-family: $playfair_font;
+        margin-bottom: 30px;
+    }
+    &__items {
+        display: flex;
+
+        .about {
+            width: 350px;
+            margin-right: 20px;
+        }
+        .category {
+            width: 300px;
+            margin-right: 20px;
+            &__container {
+                display: flex;
+                flex-wrap: wrap;
+
+                
+            }
+            &__box {
+                @include flexcenter();
+                margin-right: 20px;
+                padding: 10px;
+                margin-bottom: 20px;
+                height: 35px;
+                background-color: #0F0F0F;
+            }
+        }
+
+        .links {
+            .input {
+                margin-top: 20px;
+                input {
+                    width: 270px;
+                    height: 50px;
+                    border: none;
+                    background-color: rgba(255, 255, 255, 0.39);                   
+                    &::-webkit-input-placeholder { color:#fff; }
+                    padding-left: 10px;
+                }
+
+                button {
+                    width: 100px;
+                    height: 50px;
+                    background-color: #0F0F0F;
+                    border: none;
+                }
+            }
+        }
+    }
+}
